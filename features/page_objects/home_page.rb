@@ -5,8 +5,7 @@ class HomePage
 
   text_field(:username, id: 'summoner_name')
 
-  #link(:click, href: '/match/new')
-  button(:search_history, type: 'submit')
+  button(:search_match_history, type: 'submit')
 
   def open_home_page
     @browser.goto URL
@@ -14,10 +13,9 @@ class HomePage
 
   def search_for_summoner(input)
     self.username = input
-    search_history
+    search_match_history
   end
 
-  def wait_until(timeout = 30, message = nil, &block)
 
-  end
+
 end
