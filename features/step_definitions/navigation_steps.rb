@@ -12,11 +12,17 @@ Given /^I am on the (.*) page$/ do |page|
     @page.open_signup_page
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   elsif page == 'champions'
     @page = ChampionsPage.new(@browser)
     @page.open_champions_page
 =======
 >>>>>>> e0da9e5fa704a29a307488e3c851f46b9525f981
+=======
+  elsif page == 'champions'
+    @page = ChampionsPage.new(@browser)
+    @page.open_champions_page
+>>>>>>> feature/LST-100
   else
     return 'page does not exist'
   end

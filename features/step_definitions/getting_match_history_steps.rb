@@ -12,10 +12,13 @@ When /^I look up the summoner '(.*)'$/ do |summoner|
 end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> e0da9e5fa704a29a307488e3c851f46b9525f981
+=======
+>>>>>>> feature/LST-100
 Then /^I should see the summoners match history page$/ do
   @match_history_page.wait_until do
     expect(@match_history_page.title?).to be true
