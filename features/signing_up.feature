@@ -21,7 +21,7 @@ Feature: Signing up
     Then I should not be signed up
 
   Scenario: User successfully signs up
-    When I sign up with 'what3@what.what'
+    When I sign up with 'what8@what.what'
     Then I should be signed in
 
 
