@@ -11,6 +11,11 @@ When /^I look up the summoner '(.*)'$/ do |summoner|
   @match_history_page = MatchHistoryPage.new(@browser)
 end
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> e0da9e5fa704a29a307488e3c851f46b9525f981
 Then /^I should see the summoners match history page$/ do
   @match_history_page.wait_until do
     expect(@match_history_page.title?).to be true

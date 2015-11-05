@@ -1,7 +1,11 @@
 class SignupPage < AccountInfoPage
   include PageObject
 
+<<<<<<< HEAD
   URL = 'https://rocky-stream-2452.herokuapp.com/accounts/sign_up'
+=======
+  URL = 'http://localhost:3000/accounts/sign_up'
+>>>>>>> e0da9e5fa704a29a307488e3c851f46b9525f981
 
   text_field(:email, id: 'account_email')
   text_field(:password, id: 'account_password')
