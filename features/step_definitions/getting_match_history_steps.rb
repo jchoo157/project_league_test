@@ -11,14 +11,6 @@ When /^I look up the summoner '(.*)'$/ do |summoner|
   @match_history_page = MatchHistoryPage.new(@browser)
 end
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-
->>>>>>> e0da9e5fa704a29a307488e3c851f46b9525f981
-=======
->>>>>>> feature/LST-100
 Then /^I should see the summoners match history page$/ do
   @match_history_page.wait_until do
     expect(@match_history_page.title?).to be true
@@ -27,9 +19,11 @@ end
 
 Then /^I should see a table with the following data:$/ do |table|
   #I know this is wrong but currently can't find a better way
+  @match_history_page.wait_until do
   expect(@match_history_page.kills?).to be true
   expect(@match_history_page.deaths?).to be true
   expect(@match_history_page.assists?).to be true
   expect(@match_history_page.gold?).to be true
   expect(@match_history_page.minion_kills?).to be true
+  end
 end

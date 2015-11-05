@@ -3,7 +3,7 @@ When /^I sign up with '(.*)'$/ do |email|
 end
 
 When /^I try signing up with a taken email$/ do
-  @page.signup_with('what@what.what', 'whatwhat', 'whatwhat')
+  @page.signup_with('what5@what.what', 'whatwhat', 'whatwhat')
 end
 
 Then /^I should not be signed up$/ do
