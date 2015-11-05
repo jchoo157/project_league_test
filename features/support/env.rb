@@ -4,7 +4,7 @@
 # instead of editing this one. Cucumber will automatically load all features/**/*.rb
 # files.
 
-require 'cucumber/rails'
+require 'cucumber'
 require 'watir-webdriver'
 require 'page-object'
 
